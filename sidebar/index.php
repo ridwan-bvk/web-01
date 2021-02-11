@@ -26,7 +26,7 @@
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">List Menu </div>
       <div class="list-group list-group-flush">
-        <a href="input_data.html" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" id="data1">Dashboard</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
@@ -38,7 +38,9 @@
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
-
+       <div class = "text">
+       
+       </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
 
@@ -90,6 +92,11 @@
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
+
+     $("#data1").click(function() {
+      
+		   $(".text").html('input_data.html');
+		 });
   </script>
 
 </body>
