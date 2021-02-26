@@ -1,0 +1,152 @@
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$ git init
+Reinitialized existing Git repository in C:/xampp/htdocs/web-01/.git/
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$ git add .
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$ git commit -m "test sekali"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@infra01-HP.(none)')
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$ git config user.email "you@example.com"
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$ git config user.name "ridwan-bvk"
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$ git commit -m "test sekali"
+[main eefcdd0] test sekali
+ 1 file changed, 2 insertions(+)
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$ git push
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 288 bytes | 288.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ridwan-bvk/web-01.git
+   3a94baf..eefcdd0  main -> main
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        demo_monitoring_kmkb/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$ git init
+Reinitialized existing Git repository in C:/xampp/htdocs/web-01/.git/
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$ git add .
+warning: LF will be replaced by CRLF in demo_monitoring_kmkb/css/bulma.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in demo_monitoring_kmkb/css/datatables.min.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in demo_monitoring_kmkb/css/font-awesome.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in demo_monitoring_kmkb/css/font-awesome.min.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in demo_monitoring_kmkb/fonts/fontawesome-webfont.svg.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in demo_monitoring_kmkb/js/apexcharts.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in demo_monitoring_kmkb/js/apexcharts.min.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in demo_monitoring_kmkb/js/datatables.min.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in demo_monitoring_kmkb/js/jquery-1.11.1.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in demo_monitoring_kmkb/js/main.css.
+The file will have its original line endings in your working directory
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$ git commit -m "coba"
+[main 8dfec66] coba
+ 40 files changed, 54108 insertions(+)
+ create mode 100644 demo_monitoring_kmkb/css/bulma.css
+ create mode 100644 demo_monitoring_kmkb/css/bulma.css.map
+ create mode 100644 demo_monitoring_kmkb/css/bulma.min.css
+ create mode 100644 demo_monitoring_kmkb/css/datatables.min.css
+ create mode 100644 demo_monitoring_kmkb/css/font-awesome.css
+ create mode 100644 demo_monitoring_kmkb/css/font-awesome.min.css
+ create mode 100644 demo_monitoring_kmkb/css/login.css
+ create mode 100644 demo_monitoring_kmkb/css/main.css
+ create mode 100644 demo_monitoring_kmkb/css/style.css
+ create mode 100644 demo_monitoring_kmkb/dashboard.php
+ create mode 100644 demo_monitoring_kmkb/data.php
+ create mode 100644 demo_monitoring_kmkb/display.php
+ create mode 100644 demo_monitoring_kmkb/fonts/FontAwesome.otf
+ create mode 100644 demo_monitoring_kmkb/fonts/fontawesome-webfont.eot
+ create mode 100644 demo_monitoring_kmkb/fonts/fontawesome-webfont.svg
+ create mode 100644 demo_monitoring_kmkb/fonts/fontawesome-webfont.ttf
+ create mode 100644 demo_monitoring_kmkb/fonts/fontawesome-webfont.woff
+ create mode 100644 demo_monitoring_kmkb/fonts/fontawesome-webfont.woff2
+ create mode 100644 demo_monitoring_kmkb/footer.php
+ create mode 100644 demo_monitoring_kmkb/grafik.php
+ create mode 100644 demo_monitoring_kmkb/header.php
+ create mode 100644 demo_monitoring_kmkb/image/Thumbs.db
+ create mode 100644 demo_monitoring_kmkb/image/attachments(4).zip
+ create mode 100644 demo_monitoring_kmkb/image/avatar.png
+ create mode 100644 demo_monitoring_kmkb/image/button-login.png
+ create mode 100644 demo_monitoring_kmkb/image/header.png
+ create mode 100644 demo_monitoring_kmkb/image/login.png
+ create mode 100644 demo_monitoring_kmkb/image/side-bar.png
+ create mode 100644 demo_monitoring_kmkb/image/slide-1.png
+ create mode 100644 demo_monitoring_kmkb/image/slide-2.png
+ create mode 100644 demo_monitoring_kmkb/image/slide-3.png
+ create mode 100644 demo_monitoring_kmkb/index.php
+ create mode 100644 demo_monitoring_kmkb/js/apexcharts.js
+ create mode 100644 demo_monitoring_kmkb/js/apexcharts.min.js
+ create mode 100644 demo_monitoring_kmkb/js/datatables.min.js
+ create mode 100644 demo_monitoring_kmkb/js/jquery-1.11.1.js
+ create mode 100644 demo_monitoring_kmkb/js/main.css
+ create mode 100644 demo_monitoring_kmkb/koneksi.php
+ create mode 100644 demo_monitoring_kmkb/list.php
+ create mode 100644 demo_monitoring_kmkb/sidebar.php
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$ git push
+Enumerating objects: 48, done.
+Counting objects: 100% (48/48), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (47/47), done.
+Writing objects: 100% (47/47), 3.73 MiB | 908.00 KiB/s, done.
+Total 47 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/ridwan-bvk/web-01.git
+   eefcdd0..8dfec66  main -> main
+
+user@infra01-HP MINGW64 /c/xampp/htdocs/web-01 (main)
+$

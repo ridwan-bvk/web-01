@@ -1,5 +1,15 @@
+<?
+  $conn = mysqli_connect("localhost","root","","test");
+  IF(!$conn){
+     echo("gagal");
+  
+  $data = mysqli_query("$conn","SELECT * FROM master_barang");
+  var_dump($data);  
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 
 <head>
 
@@ -21,17 +31,25 @@
 <body>
 
   <div class="d-flex" id="wrapper">
-
+ 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">List Menu </div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light" id="data1">Dashboard</a>
+      <ul class="menu">
+        <li><a href="#home" class="list-group-item list-group-item-action bg-light" id="data1">Dashboard</a>
+        <li><a href="#about" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
+        <li><a href="#hero"class="list-group-item list-group-item-action bg-light">Overview</a>
+        <li><a href="#hero"class="list-group-item list-group-item-action bg-light">Events</a>
+        <li><a href="#hero"class="list-group-item list-group-item-action bg-light">Profile</a>
+        <li><a href="#hero"class="list-group-item list-group-item-action bg-light">Status</a>
+     </ul>
+     <!--    <a href="#" class="list-group-item list-group-item-action bg-light" id="data1">Dashboard</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a> -->
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -87,16 +105,22 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Menu Toggle Script -->
+ 
   <script>
     $("#menu-toggle").click(function(e) {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
 
-     $("#data1").click(function() {
+     $("#data1").click(function(f) {
       
-		   $(".text").html('input_data.html');
+		   $(".text").html('input_data.html2');
 		 });
+
+    //  <!-- get element-->
+    const menu = document.querySelector(".menu");
+
+
   </script>
 
 </body>

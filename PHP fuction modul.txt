@@ -1,0 +1,17 @@
+*)function :
+mysqli_connect(server,usernam,pwd,databse)
+mysqli_query(tabel,query)
+*)get data
+mysqli_array()-numeric ex. mysqli_array(@query,[1])
+mysqli_assoc()-string ex. mysqli_assoc(@query,"nama")
+mysqli_object()-
+*)show data array
+var_dump
+print_r[]
+*)show data 
+echo()
+*)variabel scope
+variabel local - ex $data
+variabel global (1 page) - ex global $x
+variabel superglobal (dimanapun) semuanya array asosiatif- $_GET,$_POST,$_REQUEST,$_SESSION,$_COOKIE,$_SERVER,$_ENV
+
