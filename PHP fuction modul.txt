@@ -14,4 +14,33 @@ echo()
 variabel local - ex $data
 variabel global (1 page) - ex global $x
 variabel superglobal (dimanapun) semuanya array asosiatif- $_GET,$_POST,$_REQUEST,$_SESSION,$_COOKIE,$_SERVER,$_ENV
+*)contoh pengiriman get dan looping dengan foreach
+<ul>
+    <?php foreach($data_barang as $barang): ?>
+      <li>  
+      
+        <a href="latihan_get.php?nama=<?=$barang["nama_barang"];?>&id=<?=$barang["id_barang"]; ?>"> <!-- cara peningriman get: ?nama= tag php  -->
+          <?= $barang["nama_barang"]; ?>
+        </a>
+      </li>
+ <?php endforeach; ?>
+</ul>
+*)contoh pengulangan db:
+	<?php 
+		dowhile($row =mysqli_fetch_assoc($data)):
+	?>
+		<tr><?= $row [nama_kolom] ?></tr>
+	<?php 
+		endwhile; 
+	?>
 
+*)explode(a,b) untuk mencari kata dalam sebuah kalimat,ex hurup titik dikalimat asep.ridwan
+ explode(".","asep.ridwan")
+*)in_array()-> mencari ada tidak dalam array
+*)startoLower()-->fungsi lower
+*)end()--> fungsi mencari kata yg terakhir
+*)return false -->untuk  menghentikan
+upload gambar
+*)pake global variabel $_FILE
+ **)isi $_FILE : 
+*)move_uploded_file()--memindahkan file ke folder yang lain

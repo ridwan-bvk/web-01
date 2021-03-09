@@ -1,3 +1,6 @@
+<?php 
+require 'function.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +14,15 @@
     </ul>
     <?php endforeach; ?> -->
 
-<a href = "index.php">home</a>
-</body>
 
+</body>
+<table border ="1" cellpadding = "10" cellspacing ="0">
+<tr>
+  <th>No.</th>
+  <th>Nama Barang</th>
+  <th>Gambar</th>
+</tr>
+
+</table>
+<a href = "index.php">home</a>
 </html>
