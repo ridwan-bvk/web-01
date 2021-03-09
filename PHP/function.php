@@ -21,12 +21,31 @@
 
 
   function tambah($data){
-      $nama_barang = $data[]
+      global $conn;
+      $nama_barang = $data["nama_barang"];
+      $ket_barang = $data["keterangan"];
+     
+      IF (empty($data["aktif"])){
+        $data["aktif"] ='0';
 
-      query("INSERT INTO master_barang VALUES()");
+      }else{
+        $data["aktif"]='1';
+      }
+      $aktif       =$data["aktif"];
 
+      $query = "INSERT INTO master_barang
+                 VALUES('','$nama_barang','','$aktif',' $ket_barang')";
+    
+     mysqli_query($conn,$query);
+   
+     IF (mysqli_affected_rows($conn)> 0){
+       echo 'berhasil';
+     }else{
+      echo 'Gagal'. mysqli_error($conn);
+     }
 
-      );
+    //  return;
+
 
   }
 ?>

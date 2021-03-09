@@ -1,32 +1,7 @@
  <?php 
  require 'function.php';
  $barang = query("SELECT * FROM master_barang"); //cara2
-  // $conn = mysqli_connect("localhost","root","","test");
-  // IF(!$conn){
-  //    echo("gagal");
-  // };
-
-  // $result = mysqli_query($conn,"SELECT * FROM master_barang");
-//  $result = mysqli_fetch_array($data);
-//     var_dump($result);  
-
-  //get
-  // $_GET ["nama"] = 'ridwan';
-  // var_dump($_GET);
-
-  // $data_barang = [
-  //     ["id_barang"    => "01",
-  //      "nama_barang"  =>"Baju muslim",
-  //      "status_barang"  =>"aktif",
-  //      "photo"  =>"aktif"
-  //   ],
-  //   ["id_barang"    => "02",
-  //       "nama_barang"  =>"Baju muslim Perempuan",
-  //       "status_barang"  =>"aktif",
-  //       "photo"  =>"aktif"
-  // ]
-  // ];
-  
+ 
 ?>
 <!DOCTYPE html>
 <html>
@@ -63,8 +38,8 @@
         <td><?= $row["nama_barang"]?></td>
         <td><img src ="img/<?= $row["gambar_barang"] ?>"></td>
         <td>
-            <a href = "">Tambah |</a>
-            <a href = "">Ubah</a>
+            <a href = "tambah_barang.php" >Tambah |</a>
+            <a href = "ubah_barang.php?id=<?php $row["id_barang"];?>">Ubah</a>
         </td>
       </tr>
       <?php $no++?>
