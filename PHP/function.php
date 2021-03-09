@@ -32,9 +32,25 @@
         $data["aktif"]='1';
       }
       $aktif       =$data["aktif"];
+      $query_max = "SELECT max(id_barang) FROM master_barang";
+      $query_max_2 = mysqli_query($conn,$query_max);
+      $id_max = mysqli_fetch_assoc($query_max_2);
+  
+
+      IF(empty($id_max) || (int) $id_max = 0){
+       
+        $id_max = '1';
+      }else
+      {
+        
+        $id_max = (int) $id_max + 1;
+      }
+      var_dump($id_max);die;
+      // var_dump($id_max);die;
+
 
       $query = "INSERT INTO master_barang
-                 VALUES('','$nama_barang','','$aktif',' $ket_barang')";
+                 VALUES('$id_max','$nama_barang','','$aktif',' $ket_barang')";
     
      mysqli_query($conn,$query);
    

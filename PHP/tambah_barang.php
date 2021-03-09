@@ -3,9 +3,9 @@ require "function.php";
 
 IF (isset($_POST["simpan"])){
     IF (tambah($_POST) > 0){
-        // echo "<script>alert ('data berhasil disimpan'); </script> ";
+         echo "<script>alert ('data berhasil disimpan'); </script> ";
     }else{
-        // echo "<script>alert ('data Gagal disimpan'); </script> ";
+         echo "<script>alert ('data Gagal disimpan'); </script> ";
 
     }
 
